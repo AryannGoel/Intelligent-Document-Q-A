@@ -1,0 +1,11 @@
+# requirements.txt
+Flask
+PyMuPDF
+sentence-transformers
+faiss-cpu
+transformers
+torch
+requests
+beautifulsoup4
+markdown2
+numpy

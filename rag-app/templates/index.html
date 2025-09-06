@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Q&A System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Intelligent Document Q&A 📚</h1>
+        
+        <div id="upload-section" class="card">
+            <h2>1. Provide a Source</h2>
+            <p>Upload a file (PDF, MD, HTML) OR enter a public URL to begin.</p>
+            <form id="upload-form">
+                <div class="input-group">
+                    <label for="document-input">Upload File:</label>
+                    <input type="file" id="document-input" name="document" accept=".pdf,.md,.html">
+                </div>
+                <div class="separator">OR</div>
+                <div class="input-group">
+                    <label for="url-input">Enter URL:</label>
+                    <input type="url" id="url-input" name="url" placeholder="https://example.com/article">
+                </div>
+                <button type="submit">Process Source</button>
+            </form>
+            <div id="upload-status" class="status"></div>
+        </div>
+
+        <div id="qa-section" class="card hidden">
+            <h2>2. Ask a Question</h2>
+            <p>Now ask anything about <strong id="filename-display"></strong>.</p>
+            <div id="chat-window">
+                <div id="chat-messages"></div>
+            </div>
+            <form id="qa-form">
+                <input type="text" id="question-input" placeholder="e.g., What is the main conclusion?" autocomplete="off" required>
+                <button type="submit">Ask</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
