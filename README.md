@@ -40,6 +40,15 @@ The architecture follows a standard RAG pipeline:
 
 ---
 
+## 📋 Features
+1. Multi-Format Document Upload: Supports PDF, HTML, and Markdown files.
+2. Web Page Scraping: Ingest content directly from a public URL.
+3. RAG-Powered Q&A: Delivers accurate answers by grounding the language model in the provided text.
+4. Source Verification: Displays the exact text chunks used to generate the answer, ensuring transparency and trust.
+5. Interactive UI: A simple, clean, and intuitive web interface for a smooth user experience.
+
+---
+
 ## 🚀 Getting Started
 
 Follow these instructions to set up and run the project on your local machine.
@@ -53,8 +62,7 @@ Follow these instructions to set up and run the project on your local machine.
 
 **1. Clone the repository:**
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
-cd <YOUR_PROJECT_DIRECTORY>
+git clone (https://github.com/AryannGoel/Intelligent-Document-Q-A.git)
 ```
 
 **2. Create and activate a virtual environment:**
@@ -86,9 +94,3 @@ Open your web browser and navigate to
 http://127.0.0.1:5000.
 ```
 
-## 📋 Features
-1. Multi-Format Document Upload: Supports PDF, HTML, and Markdown files.
-2. Web Page Scraping: Ingest content directly from a public URL.
-3. RAG-Powered Q&A: Delivers accurate answers by grounding the language model in the provided text.
-4. Source Verification: Displays the exact text chunks used to generate the answer, ensuring transparency and trust.
-5. Interactive UI: A simple, clean, and intuitive web interface for a smooth user experience.
